@@ -1,5 +1,8 @@
 <script setup>
-//import Hola from './componentes/Hola.vue';
+import valle from '../recursos/imagenes/valle.jpg';
+const fondo = document.getElementsByTagName('body');
+
+fondo.src = valle;
 </script>
 
 <template>
@@ -17,7 +20,8 @@
 
 body {
   font-family: kiwi;
-  background-image: ;
+  width: 100vw;
+  height: 100vh;
 }
 
 #menuP {
