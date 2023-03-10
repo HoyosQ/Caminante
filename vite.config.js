@@ -5,7 +5,10 @@ import vue from '@vitejs/plugin-vue';
 export default defineConfig({
   plugins: [vue()],
   clearScreen: false,
+  publicDir: 'estaticos',
   build: {
-    outDir: './publico',
+    outDir: './doc',
+    assetsDir: 'recursos',
+    sourcemap: true,
   },
 });
