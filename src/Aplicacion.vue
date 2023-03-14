@@ -22,11 +22,12 @@ body {
   font-family: kiwi;
   width: 100vw;
   height: 100vh;
+  display: flex;
 }
 
 #menuP {
   background-color: brown;
   width: 450px;
-  height: 1080px;
+  height: 100vh;
 }
 </style>
