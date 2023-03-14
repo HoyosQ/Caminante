@@ -1,33 +1,30 @@
 <script setup>
 import valle from '../recursos/imagenes/valle.jpg';
+import Menu from './componentes/Inicio/Menu.vue';
 const fondo = document.getElementsByTagName('body');
 
 fondo.src = valle;
+
+const date = new Date();
+console.log(date.getHours());
+console.log(date.getMinutes());
 </script>
 
 <template>
   <body>
-    <div id="menuP"></div>
+    <Menu></Menu>
     <div id="principal"></div>
   </body>
 </template>
 
-<style lang="scss" scoped>
+<style lang="scss">
 @font-face {
-  font-family: kiwi;
+  font-family: Kiwi;
   src: url(/fuentes/KiwiSoda.ttf);
 }
 
-body {
-  font-family: kiwi;
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-}
-
-#menuP {
-  background-color: brown;
-  width: 450px;
-  height: 100vh;
+@font-face {
+  font-family: Alquimia;
+  src: url(/fuentes/Alkhemikal.ttf);
 }
 </style>
