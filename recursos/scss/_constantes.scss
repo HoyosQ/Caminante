@@ -1,12 +1,47 @@
 :root {
-  //
-
   //Fuentes
   --fuenteTitulos: 'Alkhemikal';
+  --fuenteTitulosPeso: ;
   --fuentePrincipal: 'KiwiSoda';
+  --fuentePrincipalPeso: ;
 
-  //Colores
-  --pergamino: ;
-  --tinta: ;
-  //Tamaños Pantallas
+  //Colores Alma
+  --pergamino: #ebd78d;
+  --tinta: #2b2d42;
+  --hierro: #676768;
+  --alma1: #00aaaa;
+  --alma2: #cef8f5;
+  --slime1: ;
+  --slime2: ;
+  --slime3: ;
+  --slime4: ;
+
+  //Colores Inicio
+  --tintaHover: #ffc300;
+  --caminante: ;
+  --aventura: ;
+  --amanecer: ;
+  --dia: ;
+  --atardecer: ;
+  --tarde: ;
+  --anochecer: ;
+  --noche: ;
+  --nubesAmanecer: ;
+  --nubesDia: ;
+  --nubesAtardecer: ;
+  --nubesTarde: ;
+  --nubesAnochecer: ;
+  --nubesNoche: ;
+
+  //Colores Escena
+  --dialogo: ;
+  --seguir: ;
+  //Colores Visualización
 }
+
+// Tamaños Pantallas 🖥️ 📺 📱
+$minCelular: 576px;
+$minTablet: 768px;
+$minPantalla: 992px;
+$minPantallaGrande: 1200px;
+$minPantallaGigante: 1920px;
