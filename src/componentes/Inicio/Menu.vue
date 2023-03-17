@@ -40,6 +40,14 @@ defineProps({
 <style lang="scss" scoped>
 @import '../../../recursos/scss/constantes';
 
+html,
+body,
+h1,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
 #contenedor {
   width: 30vw;
   height: 100vh;
@@ -102,7 +110,7 @@ defineProps({
 
     &:hover {
       span {
-        color: var(--alma1);
+        color: #00aaaa;
       }
       .pergaminos {
       }

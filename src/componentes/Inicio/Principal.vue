@@ -13,9 +13,9 @@ defineProps({
 <template>
   <img id="fondoPrincipal" :class="vista" src="/recursos/imagenes/FondoDia.png" />
   <div id="contenedorPrincipal">
-    <div id="contenedorTitulo">
-      <h1 id="tituloPrincipal">{{ vista }}</h1>
-      <img id="imagenTitulo" src="/recursos/imagenes/Boton4-0s.png" />
+    <div id="contenedorTitulo" :class="vista">
+      <h1 id="tituloPrincipal" :class="vista">{{ vista }}</h1>
+      <img id="imagenTitulo" :class="vista" src="/recursos/imagenes/Boton4-0s.png" />
     </div>
     <SobreMI v-if="vista === 'Sobre Mi'" />
     <Portafolio v-else-if="vista === 'Portafolio'" />
@@ -24,7 +24,7 @@ defineProps({
   </div>
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
 @import '../../../recursos/scss/constantes';
 
 #fondoPrincipal {
@@ -43,9 +43,11 @@ defineProps({
   }
   */
   &.Portafolio {
-    animation-name: Atardecer;
-    animation-timing-function: ease-in-out;
-    animation-duration: 30s;
+    filter: hue-rotate(270deg);
+  }
+
+  &.Alma {
+    filter: invert(100%);
   }
 
   &.Creditos {
@@ -55,7 +57,7 @@ defineProps({
 #contenedorPrincipal {
   margin-left: 30vw;
   width: 70vw;
-  height: auto;
+  height: 100vh;
   display: flex;
   position: absolute;
   top: 0;
@@ -65,20 +67,36 @@ defineProps({
 
 #contenedorTitulo {
   position: relative;
-  width: 30vw;
   margin-top: 2.5em;
+  &.Alma {
+    width: 20vw;
+  }
 }
 #tituloPrincipal {
-  font-family: var(--fuenteTitulos);
+  font-family: 'Alquimia';
   font-size: 5em;
-  top: 0.5em;
-  left: 1.5em;
+  top: 0.1em;
+  left: 0.35em;
   position: absolute;
+
+  &.Portafolio {
+    left: 0.55em;
+  }
+  &.Creditos {
+    left: 0.55em;
+  }
 }
 
 #imagenTitulo {
-  width: 25vw;
-  height: 25vh;
+  width: 18vw;
+  height: 12vh;
+
+  &.Portafolio {
+    width: 20vw;
+  }
+  &.Alma {
+    width: 20vw;
+  }
 }
 
 @keyframes Atardecer {
@@ -86,7 +104,7 @@ defineProps({
     filter: hue-rotate(0);
   }
   to {
-    filter: hue-rotate(180);
+    filter: hue-rotate(1280);
   }
 }
 </style>
