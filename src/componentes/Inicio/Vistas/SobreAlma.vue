@@ -1,7 +1,7 @@
 <script setup></script>
 <template>
   <div id="miAlma">
-    <h1 id="elFuturo">Alma Entretiene</h1>
+    <h1 id="elFuturo">El Futuro Digital</h1>
     <span id="laTecnologia"> </span>
     <img id="contenedorTexto" src="/recursos/imagenes/Test.png" />
   </div>

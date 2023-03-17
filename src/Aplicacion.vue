@@ -2,6 +2,8 @@
 import { ref } from 'vue';
 import Menu from './componentes/Inicio/Menu.vue';
 import Principal from './componentes/Inicio/Principal.vue';
+import GuardaEscobas from './componentes/GuardaEscobas.vue';
+import Portafolio from './componentes/Inicio/Vistas/Portafolio.vue';
 
 const vista = ref('Sobre Mi');
 const fondo = document.getElementsByTagName('body');
@@ -20,6 +22,7 @@ function cambiarVista(nuevaVista) {
 <template>
   <Menu :cambiarVista="cambiarVista" />
   <Principal :vista="vista" />
+  <GuardaEscobas />
 </template>
 
 <style lang="scss">

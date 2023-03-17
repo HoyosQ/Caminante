@@ -7,7 +7,7 @@
       <img id="avatar" src="/recursos/animaciones/Avatar-Enflujo.gif" />
     </div>
     <div id="miHistoria">
-      <h1 id="losCopitos">Mi Historia</h1>
+      <h2 id="losCopitos">Mi Historia</h2>
       <span id="lasOrejitas">
         Estudiante de narrativas digitales de la universidad de los Andes. Apasionado por la programación, los
         videojuegos, la literatura fantastica, el pixel art, viajar por carretera y la formula 1. <br />
@@ -55,7 +55,7 @@
   font-size: 4em;
   color: #cef8f5;
   position: absolute;
-  top: 0.05em;
+  top: 0;
   left: 2.2em;
 }
 
