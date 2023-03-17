@@ -65,15 +65,20 @@ defineProps({
 
 #contenedorTitulo {
   position: relative;
+  width: 30vw;
+  margin-top: 2.5em;
 }
 #tituloPrincipal {
   font-family: var(--fuenteTitulos);
   font-size: 5em;
-  margin-top: 2.5em;
+  top: 0.5em;
+  left: 1.5em;
   position: absolute;
 }
 
 #imagenTitulo {
+  width: 25vw;
+  height: 25vh;
 }
 
 @keyframes Atardecer {
