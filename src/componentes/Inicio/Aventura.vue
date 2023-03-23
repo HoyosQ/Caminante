@@ -1,5 +1,7 @@
 <script setup></script>
+
 <template>
-  <p>componente aventura</p>
+  <img id="" src="/recursos/imagenes/Inicio.jpg" />
 </template>
+
 <style lang="scss" scoped></style>

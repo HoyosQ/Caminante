@@ -1,28 +1,17 @@
 <script setup>
-import { ref } from 'vue';
-import Menu from './componentes/Inicio/Menu.vue';
-import Principal from './componentes/Inicio/Principal.vue';
-import GuardaEscobas from './componentes/GuardaEscobas.vue';
-import Portafolio from './componentes/Inicio/Vistas/Portafolio.vue';
-
-const vista = ref('Sobre Mi');
-const fondo = document.getElementsByTagName('body');
-
 /*const date = new Date();
 console.log(date.getHours());
 console.log(date.getMinutes());
-*/
 
 function cambiarVista(nuevaVista) {
   console.log(nuevaVista);
   vista.value = nuevaVista;
 }
+*/
 </script>
 
 <template>
-  <Menu :cambiarVista="cambiarVista" />
-  <Principal :vista="vista" />
-  <GuardaEscobas />
+  <RouterView></RouterView>
 </template>
 
 <style lang="scss">
