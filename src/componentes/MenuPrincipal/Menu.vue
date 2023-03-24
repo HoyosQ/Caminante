@@ -7,10 +7,12 @@ defineProps({
 
 <template>
   <div id="contenedor">
-    <div id="contenedorTitulo">
-      <h1 id="titulo">El Camino</h1>
-      <img id="imagenTitulo" src="/recursos/imagenes/Boton1-0s.png" />
-    </div>
+    <RouterLink to="/">
+      <div id="contenedorTitulo">
+        <h2 id="titulo">El Camino</h2>
+        <img id="imagenTitulo" src="/recursos/imagenes/Boton1-0s.png" />
+      </div>
+    </RouterLink>
     <img id="fondo" src="/recursos/imagenes/Menu.png" />
     <ul id="menu">
       <!--<li class="botones" @click="cambiarVista('Aventura')">
@@ -78,8 +80,12 @@ ul {
   left: 0.2em;
   font-family: 'Alquimia';
   font-size: 2.5vw;
-  color: var(--tinta);
+  color: #2b2d42;
   z-index: 3;
+
+  :visited {
+    color: #2b2d42;
+  }
 }
 #imagenTitulo {
   width: 10.5vw;
@@ -89,7 +95,7 @@ ul {
 
 .botones {
   font-family: 'Alquimia';
-  color: var(--tinta);
+  color: #2b2d42;
   padding: 0;
   border: none;
   background: none;
@@ -106,7 +112,7 @@ ul {
   cursor: pointer;
 
   li {
-    color: var(--tinta);
+    color: #2b2d42;
 
     &:hover {
       span {

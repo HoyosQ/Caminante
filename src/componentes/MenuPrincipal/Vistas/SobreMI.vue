@@ -29,46 +29,46 @@
   align-items: center;
 }
 #cuadro {
-  margin-top: 5vh;
+  margin-top: 2.5em;
   display: block;
   border-style: groove;
   border-color: #ebd78d;
-  width: 15vw;
-  height: 15vw;
-  border: 15px groove #ebd78d;
+  width: 17.5em;
+  height: 17.5em;
+  border: 1em groove #ebd78d;
 }
 #avatar {
-  width: 15vw;
-  height: 15vw;
+  width: 17.5em;
+  height: 17.5em;
   border-style: ridge;
   border-color: #ebd78d;
   border: 1em;
 }
 
 #miHistoria {
-  margin-top: 5vh;
-  width: 50vw;
+  margin-top: 2.5em;
+  width: 70em;
   position: relative;
 }
 #losCopitos {
   font-family: 'Alquimia';
-  font-size: 4em;
+  font-size: 5em;
   color: #cef8f5;
   position: absolute;
-  top: 0;
-  left: 2.2em;
+  top: 0.2;
+  left: 2em;
 }
 
 #lasOrejitas {
   font-family: 'kiwi';
   font-size: 2em;
   position: absolute;
-  top: 2.5em;
+  top: 3em;
 }
 
 #contenedorTexto {
-  width: 55vw;
-  height: 70vh;
+  width: 75em;
+  height: 50em;
   margin-left: -2em;
 }
 </style>

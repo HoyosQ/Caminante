@@ -55,9 +55,9 @@ defineProps({
   }
 }
 #contenedorPrincipal {
-  margin-left: 30vw;
-  width: 70vw;
-  height: 100vh;
+  margin-left: 40em;
+  width: 70em;
+  height: 70em;
   display: flex;
   position: absolute;
   top: 0;
@@ -88,14 +88,14 @@ defineProps({
 }
 
 #imagenTitulo {
-  width: 18vw;
-  height: 12vh;
+  width: 20em;
+  height: 7.5em;
 
   &.Portafolio {
-    width: 20vw;
+    width: 25em;
   }
   &.Alma {
-    width: 20vw;
+    width: 25em;
   }
 }
 

@@ -28,6 +28,9 @@ function cambiarVista(nuevaVista) {
 html,
 body,
 h1,
+h2,
+h3,
+li,
 ul {
   margin: 0;
   padding: 0;
