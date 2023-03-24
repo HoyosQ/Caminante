@@ -8,10 +8,12 @@ function cambiarVista(nuevaVista) {
   vista.value = nuevaVista;
 }
 */
+import GuardaEscobas from './componentes/GuardaEscobas.vue';
 </script>
 
 <template>
   <RouterView></RouterView>
+  <GuardaEscobas />
 </template>
 
 <style lang="scss">

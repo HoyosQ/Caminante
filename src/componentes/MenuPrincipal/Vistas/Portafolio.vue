@@ -14,6 +14,12 @@ import F1 from './Proyectos/F1.vue';
         <h2></h2>
       </li>
     </ul>
+    <img id="contenedorPortafolio" src="/recursos/imagenes/Test.png" />
   </div>
 </template>
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+#contenedorPortafolio {
+  width: 75em;
+  height: 60em;
+}
+</style>

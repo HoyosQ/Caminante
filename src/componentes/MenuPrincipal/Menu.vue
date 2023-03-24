@@ -62,7 +62,7 @@ ul {
   top: 0;
   left: 0;
   width: 30vw;
-  height: 100vh;
+  height: 67.5em;
   height: auto;
   z-index: 1;
 }
